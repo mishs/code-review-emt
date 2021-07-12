@@ -43,6 +43,14 @@ function Filters() {
         <Form>
             <div>
                 <h3>Filter</h3>
+                <div className="mr-3">
+                    <FontAwesomeIcon icon={faAngleLeft} 
+                    onClick={
+                        ()=>{
+                            props.setFiltersOpen(false)
+                        }
+                    }
+                    /> 
                 <FontAwesomeIcon icon={faFilter} /> 
             </div>
 
