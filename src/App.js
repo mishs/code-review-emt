@@ -31,8 +31,8 @@ function App() {
 
         <Row>
           {
-            filtersOpen && <Col md={2}>
-              <Filters />
+            filtersOpen && <Col md={2} className="pl-0">
+              <Filters setFiltersOpen={setFiltersOpen}/>
             </Col>
           }
 
