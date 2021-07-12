@@ -201,15 +201,4 @@ function Filters() {
     )
 }
 
-const Section = styled.section`
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .form-group {
-        margin-bottom: 0;
-    }
-`
-
 export default Filters
