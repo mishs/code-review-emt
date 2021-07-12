@@ -41,10 +41,7 @@ function App() {
             <LicenseGroups />
           </Col>
 
-          <Col md={5}>
-            { <Details /> }
-          </Col>
-        </Row>
+            <ColComp/>
       </Container>
     </DevicesProvider>
   );
