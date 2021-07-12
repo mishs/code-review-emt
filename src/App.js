@@ -42,6 +42,9 @@ function App() {
           </Col>
 
             <ColComp/>
+        </Row>
+      </Container>
+    </DevicesProvider>
       </Container>
     </DevicesProvider>
   );
