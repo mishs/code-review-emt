@@ -25,8 +25,8 @@ function App() {
   return (
     <DevicesProvider>
       <Container fluid>
-        <Button>
-          <FontAwesomeIcon icon={faFilter} onClick={handleClick}/>
+        <Button className="mb-3">
+            <FontAwesomeIcon icon={faFilter} onClick={handleClick}/>
         </Button>
 
         <Row>
