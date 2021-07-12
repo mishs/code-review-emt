@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import "./App.css";
+import "./styles/index.scss"
 import { Col, Row, Container, Button } from "react-bootstrap";
 import DevicesHeader from "./components/DevicesHeader";
 import LicenseGroups from "./components/LicenseGroups";
