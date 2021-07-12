@@ -1,0 +1,430 @@
+[
+    {
+       "subscription": "Main Group 1 ",
+       "description":"Main Group 1 desc",
+       "type":"Main Group 1 type",
+       "creationDate":"01/14/2020",
+       "expirationDate":"01/20/2020",
+       "noOfDevices":1,
+       "groups": [
+          {
+             "group": "RPix yzx",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3976,
+                   "name": "ryxz-00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "my favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3978,
+                   "name": "rysx-000000000af9f25f1",
+                   "model": "Chromebook",
+                   "osversion": "1.1.0",
+                   "description": "Random desc",
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3979,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.00",
+                   "description": "other group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"aboutToExpire",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 2",
+       "description":"Main Group 2 desc",
+       "type":"Main Group 2 type",
+       "creationDate":"01/15/2020",
+       "expirationDate":"01/21/2020",
+       "noOfDevices":2,
+       "groups": [
+          {
+             "group": "Office",
+             "model": "Raspberry Pi 3",
+             "description": "Licenses for xysx prys  devices",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 4479,
+                   "name": "gyps3-3R00000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.2.0",
+                   "description": "my other favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": true,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateAction": "03/16/2020 17:39:26"
+                }
+             ]
+          },
+          {
+             "group": "Ptsr Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "fuse test",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 4480,
+                   "name": "gypr-00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "search test text",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"aboutToExpire",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 4481,
+                   "name": "gyprs-000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"expired",
+                   "online": true,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 4482,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.1",
+                   "description": "other group",
+                   "online": true,
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"expired",
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          },
+          {
+             "group": "RPi4 Entrance Other",
+             "model": "Raspberry Pi 3",
+             "description": "-",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3446,
+                   "name": "pi3-000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.3.0",
+                   "description": "my other favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"expired",
+                   "online": true,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 3",
+       "description":"Main Group 3 desc",
+       "type":"Main Group 3 type",
+       "creationDate":"01/16/2020",
+       "expirationDate":"01/22/2020",
+       "noOfDevices":3,
+       "groups": [
+          {
+             "group": "GOP Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3936,
+                   "name": "gryg-00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "^5.3.0",
+                   "description": "my favourite Group",
+                   "androidVersion": ">7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3948,
+                   "name": "prys -000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "^6.3.0",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3959,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "other group",
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"aboutToExpire",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3078,
+                   "name": "prys -000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "^6.3.0",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3279,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "other group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3278,
+                   "name": "prys -000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "^6.3.0",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3179,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "other group",
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 4",
+       "description":"Main Group 4 desc",
+       "type":"Main Group 4 type",
+       "creationDate":"01/17/2020",
+       "expirationDate":"01/23/2020",
+       "noOfDevices":4,
+       "groups": [
+          {
+             "group": "prys  Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3976,
+                   "name": "prys -00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "~5.2.1",
+                   "description": "my favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 5",
+       "description":"Main Group 5 desc",
+       "type":"Main Group 5 type",
+       "creationDate":"01/18/2020",
+       "expirationDate":"01/24/2020",
+       "noOfDevices":5,
+       "groups": [
+          {
+             "group": "prys  Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3976,
+                   "name": "prys -00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "0.9.0",
+                   "description": "my favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3978,
+                   "name": "prys -000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 3979,
+                   "name": "refeef1ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.0.0",
+                   "description": "other group",
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 6",
+       "description":"Main Group 6 desc",
+       "type":"Main Group 6 type",
+       "creationDate":"01/19/2020",
+       "expirationDate":"01/25/2020",
+       "noOfDevices":6,
+       "groups": [
+          {
+             "group": "prys  Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 4976,
+                   "name": "prys -00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "my favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"notApplied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                },
+                {
+                   "id": 4978,
+                   "name": "prys -000000000af9f25f1",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "1.1.0",
+                   "description": "Andreas",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "subscription": "Main Group 7",
+       "description":"Main Group 7 desc",
+       "type":"Main Group 7 type",
+       "creationDate":"01/20/2020",
+       "expirationDate":"01/26/2020",
+       "noOfDevices":7,
+       "groups": [
+          {
+             "group": "prys  Bureau",
+             "model": "Raspberry Pi 3",
+             "description": "my favourite Group",
+             "osversion":"1.0.0-1.1.0",
+             "licenses": [
+                {
+                   "id": 3976,
+                   "name": "prys -00000000961ac352",
+                   "model": "Raspberry Pi 3",
+                   "osversion": "3.0.0",
+                   "description": "my favourite Group",
+                   "androidVersion": "7.1.2",
+                   "policy":"applied",
+                   "license":"allOk",
+                   "online": false,
+                   "lastOnlineAction": "03/16/2020 18:14:25",
+                   "lastStateUpdate": "03/16/2020 17:39:26"
+                }
+             ]
+          }
+       ]
+    }
+ ]
