@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { DevicesContext } from '../Context/DevicesContext'
 
 
-function Filters() {
+function Filters(props) {
     const { filters, updateFilters,updateData } = useContext(DevicesContext);
     // const [filtersState, setFiltersState] = useState({
     //     onlineState: false,
@@ -40,8 +40,8 @@ function Filters() {
     }, [filters])
 
     return (
-        <Form>
-            <div>
+        <Form className="filters-box pl-3">
+            <div className="d-flex align-items-center justify-content-between">
                 <h3>Filter</h3>
                 <div className="mr-3">
                     <FontAwesomeIcon icon={faAngleLeft} 
@@ -51,10 +51,11 @@ function Filters() {
                         }
                     }
                     /> 
-                <FontAwesomeIcon icon={faFilter} /> 
+                    <FontAwesomeIcon icon={faFilter} /> 
+                </div>
             </div>
 
-            <Section>
+            <div className="filters-section">
                 <div>
                     <p>online state</p>
                     <ul>
@@ -196,7 +197,7 @@ function Filters() {
                         </li>
                     </ul>
                 </div>
-            </Section>
+            </div>
         </Form>
     )
 }
