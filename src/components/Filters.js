@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFilter } from '@fortawesome/free-solid-svg-icons'
+import { faFilter,faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { Form } from 'react-bootstrap'
 import styled from 'styled-components'
 import { DevicesContext } from '../Context/DevicesContext'
