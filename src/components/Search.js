@@ -42,25 +42,9 @@ function Search() {
                 value={query}
                 onChange={handleInput}
             />
-        </StyledDiv>
+        </div>
     )
 }
 
-const StyledDiv = styled.div`
-    position: relative;
-
-    svg {
-        position: absolute;
-        left: 8px;
-        top: 8px;
-        color: #2A94E3;
-    }
-
-    input {
-        border: 1px solid #BBBBBB;
-        border-radius: 3px;
-        padding: 3px 6px 3px 28px;
-    }
-`
 
 export default Search
