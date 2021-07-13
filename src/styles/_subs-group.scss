@@ -1,0 +1,38 @@
+.subs-group_container{
+    h2 {
+        font-size: 16px;
+        margin-top: 2rem;
+        background-color: #ced2d5;
+        padding: 8px;
+    }
+
+    table {
+        margin-bottom: 0;
+    }
+
+    table td {
+        font-size: .85rem;
+        border: none;
+        padding: .5rem;
+    }
+
+    table tr.active {
+        background-color: #a1ceff;
+        border: 1px solid #0062cc;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-header, .card-body {
+        padding: 0;
+    }
+
+    .card-header {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,19 @@
+.right-header {
+    display: flex;
+    justify-content: space-between;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    svg {
+      color: green;
+      margin-right: 5px;
+    }
+  
+    .warn svg {
+      color: red;
+    }
+  }
+  
