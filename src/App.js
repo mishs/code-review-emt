@@ -11,6 +11,7 @@ import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { DevicesProvider } from "./Context/DevicesContext";
 import { DevicesContext } from './Context/DevicesContext'
 import ColComp from './components/ColComp';
+import TableComp from './components/TableComp';
 
 function App() {
   const  [filtersOpen, setFiltersOpen] = useState(false);
@@ -26,7 +27,7 @@ function App() {
   return (
     <DevicesProvider>
       <Container fluid>
-        <Button className="mb-3">
+        <Button className="mb-3 position-sticky sticky-top">
             <FontAwesomeIcon icon={faFilter} onClick={handleClick}/>
         </Button>
 
@@ -37,10 +38,7 @@ function App() {
             </Col>
           }
 
-          <Col md={filtersOpen ? 5 : 7} className="mx-auto">
-            <DevicesHeader />
-            <LicenseGroups />
-          </Col>
+          <TableComp filtersOpen={filtersOpen} />
             <ColComp/>
         </Row>
       </Container>
