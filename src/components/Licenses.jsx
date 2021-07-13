@@ -9,7 +9,7 @@ function Licenses(props) {
     const [activePage, setActivePage] = React.useState(1)
     let selectedRow
     let licenses = []
-    const { updateActiveRow, filters, updateActiveGroup, updateActiveSGroup } = React.useContext(DevicesContext)
+    const { updateActiveRow, filters, updateActiveGroup, updateActiveSGroup,searchQuery } = React.useContext(DevicesContext)
 
     const [activeId, setActiveId] = React.useState('')
 
@@ -125,7 +125,7 @@ function Licenses(props) {
             }
     return (
         <Table>
-            <tbody>
+            <tbody className="licenses_body">
                 {
                     filteredData.filter((paginate, index) => index >= offset && index < (offset + 5)).map((licence, index1) =>
                         <tr onClick={() => handleClick(licence.id)} key={index1} className={`license_row cur-pointer ${licence.id === activeId ? 'active' : ''}`} data-selector={licence.id} >
