@@ -1,29 +1,41 @@
-import React, { useContext, useState } from 'react'
-import { Accordion, Card, Table } from 'react-bootstrap'
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { DevicesContext } from '../Context/DevicesContext'
-import Pagination from 'react-bootstrap/Pagination'
-import Licenses from './Licenses'
+import React, { useState } from "react";
+import { Accordion, Card, Table } from "react-bootstrap";
+import { DevicesContext } from "../Context/DevicesContext";
+import Licenses from "./Licenses";
+import Highlight from "react-highlighter";
 
-function SubscriptionGroup({title, data,description,type,creationDate,expirationDate,noOfDevices}) {
-    const { updateActiveGroup,updateActiveSGroup,updateActiveRow } = React.useContext(DevicesContext)
-    return (
-        <Section
-        >
-
-            <h2
-            onClick={
-                (e)=>{
-                  console.log("data show",title, data,description,type,creationDate,expirationDate,noOfDevices)
-                  updateActiveGroup({
-                      name:title,
-                      noOfGroups: data.length,
-                      description,
-                      type,
-                      creationDate,
-                      expirationDate,
+function SubscriptionGroup({
+  title,
+  data,
+  description,
+  type,
+  creationDate,
+  expirationDate,
+  noOfDevices,
+  grpIndex,
+}) {
+  const {
+    updateActiveGroup,
+    updateActiveSGroup,
+    updateActiveRow,
+    searchQuery,
+  } = React.useContext(DevicesContext);
+  const [activeSGrp, setActiveSGrp] = useState(null);
+  const [activeGrp, setActiveGrp] = useState(null);
+  return (
+    <div className="subs-group_container">
+      <h2
+        className={`cur-pointer ${
+          activeGrp === grpIndex ? "highlight-box" : ""
+        }`}
+        onClick={(e) => {
+          updateActiveGroup({
+            name: title,
+            noOfGroups: data.length,
+            description,
+            type,
+            creationDate,
+            expirationDate,
                       noOfDevices
                   })
                   updateActiveRow({selected: false})
@@ -36,9 +48,18 @@ function SubscriptionGroup({title, data,description,type,creationDate,expiration
                 {
                     data && data.map((item, index) => 
                     <Card key={index}>
-                            <Accordion.Toggle as={Card.Header} eventKey={index.toString()}>
-                                <FontAwesomeIcon icon={faAngleRight} />
-                                <Table size="sm">
+              <Accordion.Toggle
+                as={Card.Header}
+                eventKey={index.toString()}
+                className={`cur-pointer ${
+                  activeSGrp === index ? "highlight-box" : ""
+                }`}
+                onClick={() => {
+                  setActiveSGrp(index);
+                }}
+              >
+                <i class="fas fa-angle-down togg-arrow mr-1"></i>
+                <Table size="sm">
                                     <thead>
                                         <tr
                                         onClick={
@@ -229,53 +250,9 @@ function SubscriptionGroup({title, data,description,type,creationDate,expiration
                 }
 
             </Accordion>
-        </Section>
-    )
+    </div>
+  );
 }
 
-const Section = styled.div`
-    h2 {
-        font-size: 16px;
-        margin-top: 2rem;
-        background-color: #ced2d5;
-        padding: 8px;
-    }
 
-    table {
-        margin-bottom: 0;
-    }
-
-    table tr {
-        cursor: default;
-    }
-
-    table td {
-        font-size: .85rem;
-        border: none;
-        padding: .5rem;
-    }
-
-    table tr.active {
-        background-color: #a1ceff;
-        border: 1px solid #0062cc;
-    }
-
-    .card {
-        border: none;
-    }
-
-    .card-header, .card-body {
-        padding: 0;
-    }
-
-    .card-header {
-        background-color: transparent;
-        border: none;
-        display: flex;
-        align-items: center;
-    }
-`
-
-export default SubscriptionGroup
-
-
+export default SubscriptionGroup;
