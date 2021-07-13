@@ -142,53 +142,34 @@ function Details() {
                               <td>{"Policy State"}</td>
                           </tr>
                                 </>
-                            }
-                        </tbody>
-                    </Table>
-                </Tab>
-                <Tab eventKey="system" title="System">
-                    system
-                </Tab>
-                <Tab eventKey="hardware" title="Hardware">
-                    hardware
-                </Tab>
-                <Tab eventKey="Networks" title="Networks">
-                    Networks
-                </Tab>
-                <Tab eventKey="USB" title="USB">
-                    USB
-                </Tab>
-                <Tab eventKey="Apps" title="Apps">
-                    Apps
-                </Tab>
-                <Tab eventKey="Commands" title="Commands">
-                    Commands
-                </Tab>
-            </Tabs>
+                  )}
+                </tbody>
+              </Table>
+            </Tab>
+            <Tab eventKey="system" title="System">
+              system
+            </Tab>
+            <Tab eventKey="hardware" title="Hardware">
+              hardware
+            </Tab>
+            <Tab eventKey="Networks" title="Networks">
+              Networks
+            </Tab>
+            <Tab eventKey="USB" title="USB">
+              USB
+            </Tab>
+            <Tab eventKey="Apps" title="Apps">
+              Apps
+            </Tab>
+            <Tab eventKey="Commands" title="Commands">
+              Commands
+            </Tab>
+          </Tabs>
          </div>}
         </div>
-         
-    )
+      )}
+    </div>
+  );
 }
 
-
-const Header = styled.div`
-    display: flex;
-    justify-content: space-between;
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    svg {
-        color: green;
-        margin-right: 5px;
-    }
-
-    .warn svg {
-        color: red;
-    }
-`
-
-export default Details
+export default Details;
