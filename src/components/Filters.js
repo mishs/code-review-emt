@@ -1,28 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilter,faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { Form } from 'react-bootstrap'
-import styled from 'styled-components'
 import { DevicesContext } from '../Context/DevicesContext'
 
 
 function Filters(props) {
     const { filters, updateFilters,updateData } = useContext(DevicesContext);
-    // const [filtersState, setFiltersState] = useState({
-    //     onlineState: false,
-    //     offlineState: false,
-    //     policyNotApplied: false,
-    //     policyApplied: false,
-    //     licenseOk: false,
-    //     licenseExpiring: false,
-    //     licenseRunOut: false,
-    //     deviceRaspberryPi: false,
-    //     deviceOther: false
-    // });
     
     console.log(filters,"dsdsdsdsd")
     function toggleFilter(checked,category,value) {
-        // setFiltersState(e.target.name)
         let newFilter = filters
         let newCategoryArray = newFilter[category]
         if(checked){
@@ -36,7 +23,6 @@ function Filters(props) {
     }
 
     useEffect(() => {
-        // updateData({})
     }, [filters])
 
     return (
