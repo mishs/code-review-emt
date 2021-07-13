@@ -1,6 +1,6 @@
-        // &.nav-tabs{
-        //     font-size: 0.90rem;
-        //     padding: 0.5rem
-        // }
+.details_block{
+    &>div{
+        position: sticky;
+        top: 50px;
     }
 }

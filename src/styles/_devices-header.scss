@@ -1,0 +1,35 @@
+.devices-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 1rem;
+        color: #7B7B7B;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+
+        svg {
+            color: #7B7B7B;
+        }
+    }
+
+    button {
+        background: #fff;
+        border: 1px solid #BBBBBB;
+        border-radius: 3px;
+        color: #2A94E3;
+        padding: 3px 6px;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
