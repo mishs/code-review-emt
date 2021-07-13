@@ -1,12 +1,11 @@
-import React, { useContext } from 'react'
-import { useEffect } from 'react'
-import { Accordion, Card, Table } from 'react-bootstrap'
+import React from 'react'
+import { Table } from 'react-bootstrap'
 import Pagination from 'react-bootstrap/Pagination'
+import Highlight from 'react-highlighter'
 import { DevicesContext } from '../Context/DevicesContext'
 
 function Licenses(props) {
     const [offset, setOffset] = React.useState(0)
-    // const [pages, setPages] = React.useState([])
     const [activePage, setActivePage] = React.useState(1)
     let selectedRow
     let licenses = []
@@ -40,10 +39,8 @@ function Licenses(props) {
     }
     let filteredData = props.item.licenses.filter(v => {
         let OSVersion = null
-        // console.log("v,filters",v,filters)
         if (filters["OSVersion"].length) {
             filters["OSVersion"].map(v1 => {
-                // console.log("v1,v.osversion",v1,v.osversion)
                 if (v1 == v.osversion) {
                     OSVersion = true
                 } else if (OSVersion != true) {
@@ -94,7 +91,6 @@ function Licenses(props) {
         let licenseState = null
         if (filters["licenseState"].length) {
             filters["licenseState"].map(v1 => {
-                // console.log("v1,v.osversion",v1,v.osversion)
                 if (v1 == v.license) {
                     licenseState = true
                 } else if (licenseState != true) {
@@ -111,8 +107,6 @@ function Licenses(props) {
 
         return filtered
     })
-    // useEffect(() => {
-    //     setPages(pages=>{
           let pages=[]
             for (let i = 1; i <= Math.ceil(filteredData.length / 5); i++) {
                 console.log("for loop",pages,filteredData, Math.ceil(filteredData.length / 5))
@@ -129,9 +123,6 @@ function Licenses(props) {
                     </Pagination.Item>
                 )
             }
-    //         return pages
-    //     })
-    // }, [])
     return (
         <Table>
             <tbody>

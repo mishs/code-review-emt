@@ -7,9 +7,6 @@ import Highlight from 'react-highlighter'
 function LicenseGroups() {
   const { data, searchResults, searchQuery } = useContext(DevicesContext)
 
-  console.log('data', data)
-  console.log('searchres', searchResults)
-
     return (
         <div>
             <Table size="sm">
