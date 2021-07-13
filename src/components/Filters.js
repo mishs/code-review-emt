@@ -73,7 +73,6 @@ function Filters(props) {
                             <label>
                                 <input type="checkbox" 
                                     name="offlineState"
-                                    // onChange={toggleFilter}
                                     onChange={(e)=>toggleFilter(e.target.checked,"onlineState","offline")}
                                     defaultChecked={false}
                                 />
@@ -201,5 +200,6 @@ function Filters(props) {
         </Form>
     )
 }
+
 
 export default Filters
