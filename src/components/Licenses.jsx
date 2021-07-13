@@ -127,16 +127,24 @@ function Licenses(props) {
         <Table>
             <tbody>
                 {
-                    filteredData.filter((paginate, index) => index >= offset && index < (offset + 5)).map((licence, index) =>
-                        <tr onClick={() => handleClick(licence.id)} key={index} className={licence.id === activeId ? 'active' : null} data-selector={licence.id} >
-                            <td style={{ width: "30%", wordBreak: "break-all" }}>{licence.name}</td>
-                            <td style={{ width: "20%", wordBreak: "break-all" }}>{licence.model}</td>
-                            <td style={{ width: "20%", wordBreak: "break-all" }}>{licence.osversion}</td>
-                            <td style={{ width: "30%", wordBreak: "break-all" }}>{licence.description}</td>
+                    filteredData.filter((paginate, index) => index >= offset && index < (offset + 5)).map((licence, index1) =>
+                        <tr onClick={() => handleClick(licence.id)} key={index1} className={`license_row cur-pointer ${licence.id === activeId ? 'active' : ''}`} data-selector={licence.id} >
+                            <td>
+                                {
+                                    index1%2 == 0?
+                                    <i class="fas fa-wifi text-white py-2 px-1"></i> 
+                                    :
+                                    <i class="fas fa-calendar-times text-white py-2 px-1"></i>
+                                }
+                                &nbsp;&nbsp;
+                                <Highlight search={searchQuery}>{licence.name}</Highlight></td>
+                            <td><Highlight search={searchQuery}>{licence.model}</Highlight></td>
+                            <td><Highlight search={searchQuery}>{licence.osversion}</Highlight></td>
+                            <td><Highlight search={searchQuery}>{licence.description}</Highlight></td>
                         </tr>
                     )
                 }
-                <Pagination style={{ width: "316%", justifyContent: "center" }}>
+                <Pagination className="license_pagination">
                     <Pagination.Prev
                         disabled={offset < 5}
                         onClick={() => setOffset(offset - 5)}
