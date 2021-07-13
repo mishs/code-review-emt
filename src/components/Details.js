@@ -6,9 +6,19 @@ import styled from 'styled-components'
 import { DevicesContext } from '../Context/DevicesContext'
 
 function Details() {
-    const { activeRow,activeGroup,activeSGroup } = useContext(DevicesContext);
-    const { id, name, model, osversion, description, androidVersion, lastOnlineAction, lastStateUpdate, online } = activeRow;
-    console.log("activeGroup",activeGroup,activeSGroup)
+  const { activeRow, activeGroup, activeSGroup } = useContext(DevicesContext);
+  const {
+    id,
+    name,
+    model,
+    osversion,
+    description,
+    androidVersion,
+    lastOnlineAction,
+    lastStateUpdate,
+    online,
+  } = activeRow;
+  console.log("activeGroup", activeGroup, activeSGroup);
 
     return (
         <div>
@@ -29,10 +39,10 @@ function Details() {
                          license</li>
                 </ul>
 
-                <div>
-                    <p>{name}</p>
-                    <span>{lastOnlineAction}</span>
-                </div>
+            <div>
+              <p>{activeRow.selected?name:(activeGroup?activeGroup.name:activeSGroup.name)}</p>
+              <span>{lastOnlineAction}</span>
+            </div>
 
                 <div>
                     <FontAwesomeIcon icon={faEllipsisV} />
@@ -165,7 +175,6 @@ function Details() {
               Commands
             </Tab>
           </Tabs>
-         </div>}
         </div>
       )}
     </div>
