@@ -1,0 +1,53 @@
+.togg-arrow{
+    color: #4496d9;
+    font-size: 22px;
+
+}
+
+.license_head{
+    tr{
+        border-left: 6px solid #9a2a26;
+        th{
+            width: 22%;
+
+            &:first-child,&:last-child{
+                width: 28%!important;
+            }
+        }
+    }
+}
+
+.licenses_body{
+    .license_row{
+        td{
+            width: 20%;
+            word-break: break-all;
+
+            &:nth-child(3){
+                padding-left: 18px;
+            }
+    
+            &:first-child,&:last-child{
+                width: 29%!important;
+            }
+
+            &:last-child{
+                padding-left: 22px;
+            }
+
+            .fa-wifi{
+                background: #9a2a26;
+            }
+
+            .fa-calendar-times{
+                font-size: 18px;
+                background: #f6be4d;
+            }
+        }
+    }
+
+    .license_pagination{
+        width: 316%; 
+        justify-content: center;
+    }
+}
