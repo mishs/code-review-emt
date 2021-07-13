@@ -10,17 +10,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { DevicesProvider } from "./Context/DevicesContext";
 import { DevicesContext } from './Context/DevicesContext'
+import ColComp from './components/ColComp';
 
 function App() {
   const  [filtersOpen, setFiltersOpen] = useState(false);
-  const { activeRow } = useContext(DevicesContext);
+  const { activeRow,activeGroup,activeSGroup } = useContext(DevicesContext);
 
   useEffect(() => {
-    console.log('active from App js', activeRow.selected)
-  }, [activeRow])
+  }, [activeRow.selected,activeSGroup,activeGroup])
 
   const handleClick = () => {
-    setFiltersOpen(!filtersOpen)
+    setFiltersOpen(true)
   }
 
   return (
@@ -37,15 +37,12 @@ function App() {
             </Col>
           }
 
-          <Col md={filtersOpen ? 5 : 7}>
+          <Col md={filtersOpen ? 5 : 7} className="mx-auto">
             <DevicesHeader />
             <LicenseGroups />
           </Col>
-
             <ColComp/>
         </Row>
-      </Container>
-    </DevicesProvider>
       </Container>
     </DevicesProvider>
   );

@@ -10,9 +10,9 @@ function ColComp(props) {
   console.log("check comp",activeRow,activeGroup,activeSGroup)
 
     return (
-        <Col md={(activeRow.selected || activeGroup || activeSGroup)?5:1}>
-              { <Details /> }
-            </Col>
+    <Col md={5} className={`details_block ${(activeRow.selected || activeGroup || activeSGroup)? "":"d-none"}`}>
+      {<Details />}
+    </Col>
     )
 }
 
